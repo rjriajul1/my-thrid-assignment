@@ -19,6 +19,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'accent-color': '#39B54A',
               }
             }
           }
@@ -35,8 +36,33 @@
 </head>
 <body class="sora-font">
      <!-- header section start here -->
-      <header>
-
+      <header class="bg-gray-200">
+        <!-- navbar start here -->
+         <nav class="p-4">
+           <div class="lg:flex lg:justify-around">
+            <!-- logo -->
+             <div class="flex justify-between">
+                <div><img src="c2-assets/logo-header.png" alt=""></div>
+                <div> <i class="fa-solid fa-bars lg:hidden text-green-600 text-2xl "></i></div>
+             </div>
+             <!-- links -->
+              <div class="ml-[300px] hidden lg:block">
+                <ul class="lg:flex lg:gap-6">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+              </div>
+              <!-- icons-button -->
+               <div class="lg:space-x-4 hidden lg:block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-duotone fa-solid fa-cart-shopping"></i>
+                <button class="border-2 border-green-300 rounded-lg px-3 py-1">Login</button>
+                <button class="bg-accent-color px-3 py-1 rounded-lg text-white">Register</button>
+               </div>
+           </div>
+         </nav>
+         <!-- navbar end here -->
       </header>
       <!-- header section end here -->
 
